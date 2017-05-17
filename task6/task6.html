@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task6</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    * {
+		margin: 0 auto;
+		padding:0;
+		
+	}
+	body {
+		font-size: 62.5%;
+	}
+    .hd{
+    	width: 100%;
+    	height: 4rem;
+    	background: #5fc0cd;
+    	position: fixed;
+    	top: 0;
+    	z-index: 100;
+    }
+    .hd-button{
+    	position: absolute;
+    	left: 50%;
+    	margin-left: -5.5rem;
+
+    }
+	.btn-big{
+		width: 6rem;
+		height: 3rem;
+		font-size: 1.5rem;
+		border-radius: .5rem;
+		margin-top: .5rem;
+		border: 0 solid #5fc0cd;
+
+	}
+	.btn-1{
+		background: #55a8b3;
+	}
+	.btn-2{
+		margin-left: -1rem;
+		background: white;
+	}
+	.place{
+		width: 3rem;
+		height: 3rem;
+		background-image: url(images/img.png);
+		background-repeat: no-repeat;
+		background-size: 129px 22px; /*雪碧图原始大小为258px，44px，需要缩小2倍*/
+		display: inline-block; /*简单来说就是将对象呈现为inline对象，但是对象的内容作为block对象呈现。之后的内联对象会被排列在同一行内。比如我们可以给一个link（a元素）inline-block属性值，使其既具有block的宽度高度特性又具有inline的同行特性。*/
+		position: absolute;
+		right: 2%;
+		top: 1rem;
+		background-position: -77px 0;/*通过定位，使雪碧图显示正常的图标*/
+	}
+	.ft{
+		position: fixed;
+		bottom: 0;
+		background: #f8fafb;
+		width: 100%;
+		height: 5rem;
+		margin-top: 5rem;
+	}
+	.ft-1{
+		position: absolute;
+		top: .2rem;
+		left: 20%;
+		float: left;
+	}
+	.page{
+		width: 2.5rem;
+		height: 2.5rem;
+		display: inline-block;
+		background: url(images/page.png) no-repeat center;
+		background-size: 2.5rem;
+	}
+	.sy{
+		font-size: 1.5rem;
+	}
+    .ft-2{
+    	 float: left;
+    }
+    .write{
+    	width: 4.5rem;
+    	height: 4.5rem;
+    	border-radius: 4.5rem;
+    	background: url(images/write.png) no-repeat center #5fc0cd;
+    	background-size: 2.5rem;
+    	border: 0 solid #5fc0cd;
+    	position: absolute;
+    	top: .25rem;
+    	left: 50%;
+    	margin-left: -2rem;
+    }
+    .people{
+		width: 2.5rem;
+		height: 2.5rem;
+		display: inline-block;
+		background: url(images/people.png) no-repeat center;
+		background-size: 2.5rem;
+	}
+	.ft-3{
+		position: absolute;
+		top: .2rem;
+		left: 75%;
+	}
+	.btn-page{
+		border: 0;
+		background: #f8fafb;
+	}
+	.btn-group{
+		width: 32.5%;
+
+	}
+    .btn-dress{
+    	width: 100%;
+    	height: 4rem;
+    	border: 0;
+    	font-size: 1.5rem;
+    	position: relative;
+
+    }
+    .line{
+    	width: .1rem;
+    	height: 2rem;
+    	float: left;
+    	background: #ccc;
+    	position: absolute;
+    	top: 1rem;
+    	left: 100%;
+    	
+    }
+    .caret{
+    	position: absolute;
+    	right: .5rem;
+    	top: 50%;
+    }
+    .title{ 
+    	border-bottom: .1rem solid #ccc;
+    	margin-top: 4rem;
+    }
+    .date-bg{
+    	background: url(images/calendar2.png) no-repeat left;
+    	background-size: 1.5rem;
+    	margin-top: 1rem;
+    }
+    .time{
+    	display: inline-block;
+    	margin-left: 3rem;
+    	font-size: 1.5rem;
+    	margin-top: .5rem;
+		width: 50%;
+        overflow: hidden;  /*内容超出后隐藏，需要设置宽度*/
+        text-overflow: ellipsis;  /*当内容超出后，显示省略号*/
+        white-space: nowrap;   /*文本不进行换行*/
+
+    }
+    .money{
+    	display: inline-block;
+    	margin-left: 10%;
+    	font-size: 1.5rem;
+    	color: red;
+    	position: absolute;
+    	right: 10%;
+    	top: 3.2rem;
+    }
+    .click{
+    	font-size: 1.5rem;
+    	color: #5fc0cd;
+    	border: 0;
+    	background: white;
+    	margin-left: 2%;
+    	position: absolute;
+    	right: 5%;
+    	top: 3.2rem;
+    }
+    .dress-bg{
+        background: url(images/shape-4.png) no-repeat left;
+    	background-size: 1.3rem;
+    	margin-top: .5rem;
+    	margin-bottom: 1rem;
+    	
+    }
+    .bg{
+    	height: 1.5rem;
+    	display: inline-block;
+    	margin-left: 1rem;
+    	font-size: 1.5rem;
+    	padding-left: 2rem;
+    	color: #ccc;
+    }
+    .concent{
+    	border-bottom:.1rem solid #ccc;
+    	position: relative;
+    }
+    .main{
+    	padding-bottom: 6rem;
+    }
+    </style>
+</head>
+<body>
+	<script style="text/javascript" src="js/jquery/2.0.0/jquery.min.js"></script>
+	<script style="text/javascript" src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <header> 
+		<div class="hd">
+			<div class="hd-button">
+				<button class="btn-1 btn-big">找雇主</button>
+				<button class="btn-2 btn-big">找护工</button>
+			</div>
+			<span class="place"></span>
+		</div>
+    </header>
+    <main>
+        <div class="title">
+        	<div class="btn-group">
+                <button type="button" class="btn-dress btn-default dropdown-toggle "  data-toggle="dropdown">
+                所在地
+                    <span class="caret"></span>          
+                </button>
+	            <ul class="dropdown-menu" role="menu" style="min-width: 100%; text-align: center;">
+			        <li><a href="#">昌平</a></li>
+			        <li><a href="#">大兴</a></li>  
+			        <li><a href="#">海淀</a></li>
+			        <li><a href="#">朝阳</a></li>
+			    </ul>
+			    <div class="line"></div>
+            </div>
+           <div class="btn-group">
+	            <button type="button" class="btn-dress btn-default dropdown-toggle "  data-toggle="dropdown">
+	            食宿 
+	                <span class="caret"></span>          
+	            </button>
+	            <ul class="dropdown-menu" role="menu" style="min-width: 100%; text-align: center;">
+	                <li><a href="#">包住</a></li>
+	                <li><a href="#">包吃</a></li>
+	                <li><a href="#">全包</a></li>
+	            </ul>
+	            <div class="line"></div>
+            </div>
+	        <div class="btn-group">
+	            <button type="button" class="btn-dress btn-default dropdown-toggle "  data-toggle="dropdown">
+	             病人情况 
+	                <span class="caret"></span>          
+	            </button>
+	            <ul class="dropdown-menu" role="menu" style="min-width: 100%; text-align: center;">
+			       <li><a href="#">良好</a></li>
+			       <li><a href="#">好</a></li>
+			       <li><a href="#">一般</a></li>
+			       <li><a href="#">较差</a></li>
+			    </ul>
+	        </div>
+	    </div>
+        <div class="main">
+        	<div class="concent">
+                
+                	<span class="bg date-bg">服务日期</span><br>
+	        		<span class="time"><strong>2015-7-5 至 2015-7-12</strong></span>
+	                <span class="money"><strong>25元/小时</strong></span>
+	                <button class="click" type="button" onclick="window.location.href='http://www.wyq0204.com/task5/task5.html'"><strong><big>></big></strong></button><br>
+	                <span class="bg dress-bg">北京.通州.果园</span>
+               
+        		
+        	</div>
+        	<div class="concent">
+        		<span class=" bg date-bg">服务日期</span><br>
+        		<span class="time"><strong>2015-7-5 至 2015-7-12</strong></span>
+                <span class="money"><strong>35元/小时</strong></span>
+                <button class="click" type="button" onclick="window.location.href='http://www.wyq0204.com/task5/task5.html'"><strong><big>></big></strong></button><br>
+                <span class="bg dress-bg">北京.通州.果园</span>
+        	</div>
+        	<div class="concent">
+        		<span class=" bg date-bg">服务日期</span><br>
+        		<span class="time"><strong>2015-7-5 至 2015-7-12</strong></span>
+                <span class="money"><strong>45元/小时</strong></span>
+                <button class="click" type="button" onclick="window.location.href='http://www.wyq0204.com/task5/task5.html'"><strong><big>></big></strong></button><br>
+                <span class="bg dress-bg">北京.通州.果园</span>
+        	</div>
+        	<div class="concent">
+        		<span class=" bg date-bg">服务日期</span><br>
+        		<span class="time"><strong>2015-7-5 至 2015-7-12</strong></span>
+                <span class="money"><strong>45元/小时</strong></span>
+                <button class="click" type="button" onclick="window.location.href='http://www.wyq0204.com/task5/task5.html'"><strong><big>></big></strong></button><br>
+                <span class="bg dress-bg">北京.通州.果园</span>
+        	</div>
+        	<div class="concent">
+        		<span class=" bg date-bg">服务日期</span><br>
+        		<span class="time"><strong>2015-7-5 至 2015-7-12</strong></span>
+                <span class="money"><strong>25元/小时</strong></span>
+                <button class="click" type="button" onclick="window.location.href='http://www.wyq0204.com/task5/task5.html'"><strong><big>></big></strong></button><br>
+                <span class="bg dress-bg">北京.通州.果园</span>
+        	</div>
+        </div>    
+    </main>
+    <footer>
+    	<div class="ft">
+    	 	<div class="ft-1">
+    	 	    <button class="btn-page">
+    	 		    <span class="page"></span><br>
+    			    <span class="sy" style="color: #5fc0cd">首页</span>
+    	 	    </button>
+    		</div>
+    		<div class="ft-2">
+    			<button class="write"></button>
+    		</div>	
+    		<div class="ft-3">
+    		    <button class="btn-page">
+    		    	<span class="people"></span><br>
+    			    <span class="sy">我的</span>
+    		    </button>    
+    		</div>
+    	</div>
+    </footer>
+</body>
+</html>
