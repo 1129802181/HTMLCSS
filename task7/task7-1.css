@@ -1,0 +1,106 @@
+* {
+    margin: 0 auto;
+}
+body {
+    font-size: 62.5%;
+    background-color: #f0f0f0;
+    padding-top: 5rem;
+}
+.head{
+    width: 100%;
+    background-color: #29bde0;
+    position: fixed;
+    top: 0;
+}
+.homepage{
+    width: 2rem;
+    height: 2rem;
+    background: url(images/homepage.png) no-repeat left;
+    background-size: 2rem;
+    border: 0 solid #29bde0;
+    margin:1rem 5%;
+}
+.lastgame{
+    width: 90%;
+    background-color: white;
+    position: relative;
+    border:.1rem solid #ccc;
+}
+.last{
+    display: block;
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: #9a9a9a;
+    text-align: center;
+    letter-spacing:.1rem;
+}
+.next-back{
+    background: url(images/next-back.png) no-repeat right;
+    background-size: 1.5rem;
+    width:2rem;
+    height:2rem;
+    border:0 solid white;
+    position: absolute;
+    top:50%;
+    margin-top:-1rem;
+    right:2%;
+}
+.main{
+    border:.1rem solid #ccc;
+    width:90%;
+    background-color: white;
+    margin-top:1rem;
+    position:relative;
+}
+.name{
+    color:#fbb435;
+    text-align: center;
+    padding:1rem 0;
+    font-size:2rem;
+    border-bottom:.1rem solid #fbb435;
+    letter-spacing:.1rem;
+}
+.easy{
+    background-color:#69d1e9;
+    font-size:2rem;
+    color:white;
+    border:0 solid white;
+    width:80%;
+    height:5rem;
+    margin-left:10%;
+    margin-top: 1rem;
+    letter-spacing:.1rem;
+}
+.number{
+    font-size:1.5rem;
+    padding-top:1rem;
+    margin:0;
+    letter-spacing:.1rem;
+    color:#9a9a9a;
+}
+.click-circle{
+    text-align: center;
+    padding:.5rem 0;
+}
+.circle{
+    width: 1rem;
+    height:1rem;
+    border-radius:1rem;
+    border:0 solid #69d1e9;
+    margin-left: 0.5rem;
+}
+.circle:hover{
+    background-color:#69d1e9;
+}
+.next-page{
+    display: inline-block;
+    width:1.5rem;
+    height:3rem;
+    border:0;
+    background: url(images/next-page.png) no-repeat left;
+    background-size:1.5rem;
+    position: absolute;
+    top:50%;
+    right:2%;
+    margin-top: -1.5rem;
+}

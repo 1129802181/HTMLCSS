@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    border: 0;
+}
+body {
+    font-size: 62.5%;
+    background-color: white;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 4.5rem;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.game-over {
+    position: relative;
+    padding: 1rem 0;
+    background-color: #29bde0;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    letter-spacing: .1rem;
+    border-bottom: .2rem solid #74d4eb;
+}
+.head-page {
+    position: absolute;
+    top: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border:0;
+}
+.first-page {
+    background: url(images/first-page.png) no-repeat left;
+    background-size: 100%;
+    left: 1rem;
+}
+.result-tip {
+    background: url(images/result-tip.png) no-repeat left;
+    background-size: 100%;
+    right: 1rem;
+}
+.main {
+    margin: 0 auto;
+    max-width: 640px;
+}
+.win-page {
+    height: 15rem;
+    background: url(images/win-page.png) no-repeat center #29bde0;
+    background-size: 20rem;
+    border: 0;
+}
+.nb {
+    width: 100%;
+    height: 8rem;
+    background-color: #29bde0;
+    border: 0;
+}
+.nb-p {
+    font-size: 2rem;
+    color: #ffc865;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.summary {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #29bde0;
+    letter-spacing: .1rem;
+    padding-left: 2rem;
+}
+.summary p{
+    margin: 0;
+    padding-top: .5rem;
+}
+.day {
+    padding-left: 2rem;
+    letter-spacing: .1rem;
+    border-bottom: .2rem solid #dddddd;
+}
+.time {
+    display: inline-block;
+    padding-left: 40%;
+    font-size: 1rem;
+    color: #a6a6a6;
+}
+.time1 {
+    font-size: 1.5rem;
+    color: #a6a6a6;
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    height: 6rem;
+    text-align: center;
+    background-color: rgba(41,189,224,0.5);
+
+}
+.foot {
+    position: absolute;
+    top: 1rem;
+    padding: 1rem 0;
+    width: 40%;
+    font-size: 2rem;
+    color: white;
+    border-radius: .5rem;
+}
+.over {
+    left: 5%;
+    background-color: #f66f6f;
+}
+.share {
+    right: 5%;
+    background-color: #fbb435;
+}
