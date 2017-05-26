@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 62.5%;
+    background-color: #fafafa;
+}
+.header {
+    position: fixed;
+    top: 0;
+}
+.head1 {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+}
+.tel {
+    position: absolute;
+    left: 10%;
+    color: #29b078;
+    line-height: 3rem;
+}
+.head-image {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    margin-top: -1rem;
+    list-style: none;
+}
+.head-image li {
+    float: left;
+    padding-left: .5rem;
+}
+.head-image1 {
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+}
+.weixin {
+    background: url(images/weixin.png);
+    background-size: 2rem;
+}
+.qq {
+    background: url(images/qq.png);
+    background-size: 2rem;
+}
+.xinlang {
+    background: url(images/xinlang.png);
+    background-size: 2rem;
+}
+.head2 {
+    position: relative;
+    width: 100%;
+    background-color: #29b078;
+    font-size: 1.5rem;
+}
+.head2 .navbar-toggle {
+    border: .1rem solid white;
+    margin-top: 17px;
+    margin-right: 10%;
+    /*更改标题栏显示“书签”标识时的默认样式以及距离页面右边的距离，使其和上面的图片显示一致*/
+}
+.navbar {
+    margin: 0;
+}
+span.icon-bar {
+    background-color: white;
+}
+.navbar-nav li a {
+    color: white;
+    padding: 24px 15px;
+}
+.jnshu-image {
+    margin: 10px 0;
+    padding-left: 10%;
+}
+.navbar-collapse ul {
+    float: right;
+}
+.nav li a:hover {
+    background: #29b078;
+    border-bottom: .2rem solid white;
+}
+@media screen and (max-width: 768px) {
+    .navbar-collapse ul{
+        float: none;
+        /*当屏幕小于768px的时候，将ul的浮动去掉，使标签可以居中显示*/
+    }
+}
+.qiye-image img {
+    width: 100%;
+}
+.shouye p {
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+}
+.hezuoqiye {
+    background-color: #fff;
+    padding-top: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: .5rem;
+}
+.hezuoqiye h4 {
+    border-bottom: .1rem solid #e6e6e6;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.hezuoqiye ul {
+    padding-left: 37%;
+}
+.hezuoqiye li {
+    list-style: circle;
+    /*空心圆*/
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #f9a372;
+    /*为了改变圆圈的大小，可以先设置li的字体变大，在设置a的字体，单独改变字体大小，这样可以确保圆圈是变大的*/
+}
+.hezuoqiye li a {
+    color: #26a26f;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.hezuoqiye li:hover {
+    list-style: disc;
+    /*鼠标滑过时变成实心圆*/
+}
+.hezuoqiye li a:hover {
+    background-color: #fff;
+    color: #f9a372;
+    border: 0;
+}
+.qiyejianjie {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: .1rem solid #e6e6e6;
+    margin-top: -15px;
+}
+.tudou-image {
+    float: left;
+
+}
+.tudou-image img {
+    padding: 2rem 3rem;
+}
+.tudou {
+    padding: 2rem 4rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    color: #aeaeae;
+}
+.fazhan {
+    font-size: 1.5rem;
+    color: #aeaeae;
+    line-height: 2.5rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-indent:2em;
+    /*首行缩进两个字符*/
+}
+
+footer {
+    width: 100%;
+    background-color: #29b078;
+    position: relative;
+    color: white;
+}
+footer h4 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    margin: 0;
+}
+footer ul {
+    list-style: none;
+}
+footer li {
+    float: left;
+}
+footer li a {
+    color: white;
+    font-size: 1rem;
+}
+footer li a:hover {
+    color: white;
+}
+.net {
+    margin-top: 2rem;
+    clear: both;
+    background: #29b078;
+    padding: .5rem 0;
+    text-align: center;
+    border-top: .2rem solid #32c086;
+}
