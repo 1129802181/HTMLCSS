@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 62.5%;
+}
+header {
+    background-color: #1d7ad9;
+}
+.head1 {
+    float: left;
+    margin: 0;
+    color: #fff;
+    padding: 1rem 0;
+}
+.head2 {
+    float: right;
+    text-decoration: none;
+    color: #fff;
+}
+.head2 a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+.head2 a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.main1 {
+    background-color: #f9f9f9;
+}
+.main2 {
+    display: flex;
+    justify-content: flex-end;
+}
+.main2 button {
+    padding: .5rem 1rem;
+    background-color: #fff;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    box-shadow: 0 5px 2px #eae9ea;
+    border-radius: 3px;
+    outline: none;
+    /*outline属性设置后可以去掉点击按钮后出现的蓝色边框问题，该问题是由圆角导致的。*/
+}
+.main2 button:hover {
+    background-color: #1d7ad9;
+    color: #fff;
+
+}
+@media screen and (max-width: 768px) {
+    .main2 {
+        display: flex;
+        justify-content: center;
+        /*当屏幕小于等于768px的时候，将main2中的按钮改为水平居中显示*/
+    }
+    .main2 button {
+        margin: 2rem 1rem;
+    }
+    /*当屏幕小于等于768px的时候，将button样式更改，使其完全居中显示*/
+}
+.main-flow {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    /*换行属性*/
+}
+.main-flow1 {
+    padding-top: 4rem;
+    width: 10rem;
+    border: none;
+    margin-left: -1px;
+}
+.step {
+    width: 10rem;
+    height: 5px;
+    border-radius: 5px;
+}
+.first-step {
+    background-color: #ff7f02;
+}
+.two-step {
+    background-color: #cccccc;
+}
+.number {
+    margin: 0 auto;
+    margin-top: -1.2rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 2rem;
+    color: #fff;
+}
+.one {
+    background-color: #ff7f02;
+}
+.two {
+    background-color: #cccccc;
+}
+.main-flow1 p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin: 0;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .main-flow {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.custom-made {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding-left: .5rem;
+    border-left: .3rem solid #1d7ad9;
+}
+.box {
+    background-color: #f4f4f4;
+}
+.box img {
+    padding: 1rem;
+}
+.box span {
+    font-size: 1.2rem;
+    color: #1d7ad9;
+}
+.box-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    background-color: #fbfcff;
+}
+label {
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+.label-p {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem 2.5rem;
+}
+input {
+    display: none;
+}
+.circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #f8f9fb;
+    border: .1rem solid #d7d7d7;
+    margin: 2rem 0;
+    position: absolute;
+    /*绝对定位之后可以设置下面文字的样式，使其完全居中显示*/
+}
+.click2:checked + .circle{
+    border: solid .5rem #1d7ad9;
+    /*点击label所在区域时，将原来的圆圈添加border，使其显示被选中的样式*/
+}
+.form-control {
+    width: 10rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*去掉下拉框的默认样式，然后添加背景图片显示不同的样式*/
+    background: url(images/drop-down.png) no-repeat right;
+    padding-right: 2rem;
+}
+.size-name {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 2rem;
+}
+.long {
+    display: inline-block;
+    width: 5rem;
+}
+.next-step {
+    width: 100%;
+    text-align: center;
+    border-top: .1rem solid #e7e7e7;
+    border-bottom: .1rem solid #e7e7e7;
+}
+.next-step1 {
+    background-color: #e15053;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    padding: .5rem 3rem;
+    margin: 10rem 0;
+}
+footer {
+    width: 100%;
+    background-color: #f9f9f9;
+    position: relative;
+    color: white;
+}
+footer h5 {
+    color: #999999;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 4rem;
+}
+.foot-ul {
+    margin-top: 4rem;
+}
+footer ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+footer li {
+    float: left;
+}
+footer li a {
+    color: #999999;
+    font-size: 1rem;
+}
+footer li a:hover {
+    color: #1d7ad9;
+    text-decoration: none;
+}
+.foot-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.foot-p {
+    margin-top: 4rem;
+    margin-right: 1rem;
+}
+.foot-p p {
+    color: #999999;
+}
+.foot-image {
+    margin: 3rem 0;
+}
+.net {
+    clear: both;
+    background: #1d7ad9;
+    padding: .5rem 0;
+    text-align: center;
+    border-top: .2rem solid #1d7ad9;
+}
