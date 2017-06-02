@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>task4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+<!-- 一定要写该行，不然无法自适应手机屏幕大小 -->
+<style type="text/css">*
+
+body{
+margin: 0px;
+
+background: #eff0f4;
+}
+input{
+	outline: none;
+}
+header{
+background: #5fc0cd;
+width: 100%;
+color: white;
+position: fixed;
+height: 50px;
+}
+
+.login{
+float: left;
+
+margin: 0px;
+position: absolute;/*绝对定位进行居中的原理是通过把这个绝对定位元素的left或top的属性设为50%,这个时候元素并不是居中的，而是比居中的位置向右或向左偏了这个元素宽度或高度的一半的距离，所以需要使用一个负的margin-left或margin-top的值来把它拉回到居中的位置，这个负的margin值就取元素宽度或高度的一半。*/
+left: 50%;
+margin-left: -20px;
+line-height: 50px;  /*使文字垂直居中*/
+font-size: 20px;
+
+}
+.a_left{
+	text-decoration: none;  /*去掉a标签的下划线*/
+	line-height: 50px;
+	color: white;
+	position: fixed;
+	font-size: 16px;
+	left: 1%
+}
+
+.a_right{
+	text-decoration: none;
+	color: white;
+	line-height: 50px;
+	position: fixed;
+	font-size: 16px;
+	right: 1%
+}
+.user{
+	padding-top: 50px;
+	background: #eff0f4;
+
+}
+.tel{
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+	background: url(01.png) no-repeat #fff left;
+	background-size: 2.5rem;  /*控制图片大小*/
+}
+.tel-l{
+	width: 2px;
+	height: 30px;
+	background: #eff0f4;
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.tel-login{
+	float:left;
+	height: 50px;
+	background: none;
+	position: absolute;/*绝对定位，是输入框固定，不会由于缩放导致输入框下移*/
+	border:none;
+	padding: 0px;
+	text-indent: 20px;
+	
+}
+.password{
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+	background: url(02.png) no-repeat #fff left;   /*input中显示图标，需要在其父元素中添加background属性*/
+	background-size: 2.5rem;
+}
+.tel-p{
+	width: 2px;
+	height: 30px;
+	background: #eff0f4;
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.tel-password{
+	position: absolute;
+	float:left;
+	height: 50px;
+	background: none;   /*图标显示的时候需要将input的背景设置为none*/
+	border:none;
+	padding: 0px;
+	text-indent: 20px;
+
+}
+.enter{
+	margin-top: 10px;
+	
+
+}
+.l-enter{
+	background: #5fc0cd;
+	width: 100%;
+	height: 50px;
+	color: white;
+	font-size: 18px;
+	letter-spacing: 8px;   /*设置字体间距*/
+	border: none;
+	margin: 0px auto;
+	padding-top: 0px;
+	cursor: pointer;    /*点击登录按钮是显示‘手爪’图标*/
+}
+.reset{
+	color: #5fc0cd;
+	float: right;
+	margin-top: 10px;
+	font-size: 12px;
+	margin-right: 2vh;
+}
+</style>
+
+</head>
+<body>
+<header>
+<a href="" class="a_left">注册</a>
+<h3 class="login">登录</h3>
+<a href="" class="a_right">关闭</a>
+</header>
+<form class="user">
+	<div class="tel">
+		<div class="tel-l"></div>
+		<input type="text"  placeholder="请输入手机号" class="tel-login">
+	</div>
+	<div class="password">
+		<div class="tel-p"></div>
+		<input type="password"  placeholder="请输入密码" class="tel-password">
+	</div>	
+		
+</form>
+<footer>
+	
+
+<div class="enter">
+	<button class="l-enter"><strong>登录</strong></button>
+</div>
+<a href="" class="reset">忘记密码</a>
+</footer>
+</body>
+</html>

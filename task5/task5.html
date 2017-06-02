@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+	* {
+		margin: 0px;
+		padding:0px;
+		
+	}
+	body {
+		font-size: 62.5%;
+	}
+	.hd {
+		width: 100%;
+		height: 3rem;
+		background: #5fc0cd;
+		line-height: 3rem;
+		position: fixed;
+		top: 0px;
+		z-index: 100;/*设置图片显示的优先级，避免顶部图片被遮挡*/
+	}
+	.hd-p {
+		position: fixed;
+		left:50%;
+		font-size: 1rem;
+		color: white;
+		margin-left: -2rem;/*4个字体共占用4rem，设置-2rem可以使字体完全居中*/
+	}
+	.hd-i {
+		float: left;
+		color: white;
+		text-decoration:none;/*隐藏a标签的下划线*/
+		margin-left: .5rem;
+		font-size: 1rem;
+	}
+	.m {
+		width: 100%;
+		height: 10.5rem;
+		margin-top: 3rem;
+		position: relative;/*父元素设置position后，子元素才能根据margin-top垂直居中*/
+		background: url(bk1.png) center;
+		background-size: cover;   /*把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+		背景图像的某些部分也许无法显示在背景定位区域中。*/
+
+	}
+	.m-b {
+		width: 4.5rem;
+		height: 4.5rem;
+		overflow: hidden;/*隐藏多余的图片*/
+		position: absolute;
+		left: 1.5rem;
+		top: 50%;
+		margin-top: -2.25rem;  /*设置为其高度的一半，使其垂直居中*/
+		border-radius: 50%;
+		background-color: #fff;
+		float: left;
+	}
+	.m-b img {
+		width: 100%;/*让图片跟随div大小自动变化*/
+	}
+	.m-p {
+		position: absolute;
+		top: 40%;
+		left: 7.5rem;
+		color: white;
+	}
+	.m-p1 {
+		font-size: .9rem;
+	}
+	.m-p2 {
+		margin-top: .4rem;
+		background: url(Shape-4.png) no-repeat left;
+		background-size: .8rem;
+		padding-left: 1.2rem;/*使文字显示不遮挡图片*/
+	}
+	.title {
+		height: 3rem;
+		border-bottom: .1rem solid #ccc;
+		
+	}
+	.title-p {
+		margin-left: .5rem;
+		padding-left: .3rem;
+		line-height: 3rem;/*使文字垂直居中,等于div的高度*/
+		border-left: .2rem solid #5fc0cd;
+	}
+	li {
+		
+		border-bottom: .1rem solid #ccc;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		list-style: none;
+		position: relative;
+		
+	}
+	.feature {
+		display: inline-block; /*将块元素改为行元素*/
+		background:url(star.png) no-repeat left;
+		background-size: .8rem;
+		padding-left: 1rem;
+		line-height: 3rem;
+		margin-left: .5rem;
+	}
+	.worktime {
+		color: #aaa;
+		position: absolute;
+		top: 50%;
+		/*transform: translateY(-50%);*/
+		margin-top: -0.5rem;/*用transform也可以垂直居中；div默认大小1rem，设置margin-top为-0.5rem也可以垂直居中*/
+		margin-left: .5rem;
+		border-right: .1rem solid #ccc;
+		padding-right: .5rem;
+		
+	}
+	.min {
+		display: inline-block;
+		line-height: 3rem;
+		padding-left: 5rem;
+
+	}
+	.explain {
+		display: inline-block;
+		line-height: 1.2rem;
+	}
+	.message {
+		width: 45%;
+		height: 3rem;
+		margin-left: 3%;
+		border: .15rem solid #5fc0cd;
+		border-radius: .3rem;
+		background: white;
+		font-size: 1rem;
+		color: #5fc0cd ;
+		float: left;
+		cursor: pointer;
+	}
+	.tel {
+		width: 45%;
+		height: 3rem;
+		margin-left: 4%;
+		background: #5fc0cd;
+		border: .15rem solid #5fc0cd;
+		border-radius: .3rem;
+		font-size: 1rem;
+		color: white;
+		float: left;
+		cursor: pointer;  /*使鼠标移动到按钮时显示‘手爪’标识*/
+	}
+	.foot {
+		position: fixed;
+		bottom: 8px;
+		background:white;
+		width: 100%;
+		height: 3rem;
+	}
+	ul {
+		margin-bottom: 4rem;
+	}
+	</style>
+</head>
+<body>
+    <header>
+        <div class="hd">
+            <a href="http://www.wyq0204.com/task6/task6.html" class="hd-i"><big>&lt;</big></a>
+            <div class="hd-p">
+                <p><strong>个人主页</strong></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="m">
+            <div class="m-b">
+                <img src="people.png" alt="">
+            </div>
+            <div class="m-p">
+                <div class="m-p1">
+                    <p>徐士林 55岁</p>
+                </div>
+                <div class="m-p2">
+                    <p>京城·四方·报纸林</p>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <span class="title-p">专业技能</span>
+        </div>
+        <ul>
+            <li>
+                <div class="feature">住家</div>
+                <div class="feature">不含餐</div>
+            </li>
+            <li>
+                <div class="worktime">从业年限</div>
+                <div class="min">0~3年</div>
+            </li>
+            <li>
+                <div class="worktime">工作时间</div>
+                <div class="min">全天</div>
+            </li>
+            <li>
+                <div class="worktime">服务价格</div>
+                <div class="min" style="color: red">25元/小时</div>
+            </li>
+            <li>
+                <div class="worktime">自我介绍</div>
+                <div class="min">
+                    <p class="explain">
+					可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div class="foot"> 
+            <button class="message" type="button">留言</button>
+            <button class="tel" type="button">电话联系</button>
+        </div>	
+    </footer>
+</body>
+</html>
