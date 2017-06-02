@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*防止sass中注释报错*/
+body {
+  font-size: 62.5%;
+  max-width: 640px;
+  margin: 0 auto; }
+
+header {
+  position: fixed;
+  top: 0;
+  max-width: 640px;
+  width: 100%;
+  background: #5fc0cd;
+  z-index: 100; }
+
+.hd-button {
+  display: flex;
+  justify-content: center;
+  margin: .5rem 0; }
+
+.btn-big {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.btn-1 {
+  background: #55a8b3; }
+
+.btn-2 {
+  margin-left: -1rem;
+  background: #fff; }
+
+.place {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(images/img.png);
+  background-repeat: no-repeat;
+  background-size: 129px 22px;
+  /*雪碧图原始大小为258px，44px，需要缩小2倍*/
+  display: inline-block;
+  /*简单来说就是将对象呈现为inline对象，但是对象的内容作为block对象呈现。之后的内联对象会被排列在同一行内。比如我们可以给一个link（a元素）inline-block属性值，使其既具有block的宽度高度特性又具有inline的同行特性。*/
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  margin-top: -.75rem;
+  background-position: -77px 0;
+  /*通过定位，使雪碧图显示正常的图标*/ }
+
+.title {
+  border-bottom: 1px solid #ccc;
+  margin-top: 53px; }
+
+.address, .eat, .patient {
+  display: inline-block;
+  width: 32%;
+  padding: 1rem 10%;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+@media screen and (max-width: 425px) {
+  .address, .eat, .patient {
+    padding: 1rem 7%; } }
+@media screen and (max-width: 375px) {
+  .address, .eat, .patient {
+    padding: 1rem 6%; } }
+@media screen and (max-width: 320px) {
+  .address, .eat, .patient {
+    padding: 1rem 4%; } }
+.date-bg {
+  background: url(images/calendar2.png) no-repeat left;
+  background-size: 1.3rem;
+  margin-top: 1rem; }
+
+.time {
+  display: inline-block;
+  margin-left: 3rem;
+  font-size: 1rem;
+  margin-top: .6rem;
+  width: 50%;
+  overflow: hidden;
+  /*内容超出后隐藏，需要设置宽度*/
+  text-overflow: ellipsis;
+  /*当内容超出后，显示省略号*/
+  white-space: nowrap;
+  /*文本不进行换行*/ }
+
+.money {
+  display: inline-block;
+  margin-left: 10%;
+  font-size: 1rem;
+  color: red;
+  position: absolute;
+  right: 12%;
+  top: 50%;
+  margin-top: -10.5px; }
+
+.click {
+  font-size: 2rem;
+  color: #5fc0cd;
+  border: 0;
+  background: white;
+  margin-left: 2%;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  margin-top: -18px;
+  cursor: pointer;
+  outline: none; }
+
+.dress-bg {
+  background: url(images/shape-5.png) no-repeat left;
+  background-size: 1.2rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem; }
+
+.bg {
+  height: 1.5rem;
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding-left: 2rem;
+  color: #ccc; }
+
+.concent {
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+
+.main {
+  padding-bottom: 6rem; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #f8fafb;
+  max-width: 640px;
+  width: 100%;
+  height: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.page {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  background: url(images/page.png) no-repeat center;
+  background-size: 2rem; }
+
+.sy {
+  font-size: 1rem; }
+
+.write {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  background: url(images/write.png) no-repeat center #5fc0cd;
+  background-size: 2rem;
+  border: 0 solid #5fc0cd;
+  cursor: pointer;
+  outline: none; }
+
+.people {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  background: url(images/people1.png) no-repeat center;
+  background-size: 2rem; }
+
+.btn-page, .btn-page1, .btn-page2 {
+  border: 0;
+  background: #f8fafb;
+  cursor: pointer;
+  outline: none; }
+
+.btn-page1 {
+  margin-left: 10%; }
+
+.btn-page2 {
+  margin-right: 10%; }
+
+/*# sourceMappingURL=task12-2.css.map */
