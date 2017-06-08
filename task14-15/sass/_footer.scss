@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*防止sass中注释报错*/
+footer {
+  width: 100%;
+  background-color: $backgroundColor1;
+  color: #fff;
+  }
+.foot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+}
+.foot h4 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  margin: 0;
+  }
+.foot ul {
+  list-style: none;
+  padding: 0;
+  }
+.foot li {
+  float: left;
+  }
+.foot li a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  }
+.foot li a:hover {
+  border-bottom: 1px solid #fff;
+  }
+.net {
+  margin-top: 2rem;
+  background-color: $backgroundColor1;
+  padding: .5rem 0;
+  text-align: center;
+  border-top: 1px solid #32c086;
+  }
+@media screen and (max-width: 374px) {
+  .foot {
+    div {
+      width: 100%;
+    }
+  }
+}

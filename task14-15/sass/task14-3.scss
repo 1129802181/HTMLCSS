@@ -1,0 +1,176 @@
+@charset "utf-8";
+/*防止sass中注释报错*/
+$backgroundColor1: #29b078;
+$backgroundColor2: #fafafa;
+$backgroundColor3: #d0d6d9;
+$borderColor: #eae9ea;
+body {
+  font-size: 62.5%;
+  background-color: $backgroundColor2;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+@import "header";
+@import "footer";
+.main {
+  background-color: $backgroundColor2;
+  width: 100%;
+}
+.shouye {
+  width: 80%;
+  margin-left: 10%;
+}
+.shouye p {
+  margin: 0;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+.shouye p:nth-of-type(2) {
+  border-bottom: .1rem solid $backgroundColor3;
+}
+.shouye ul {
+  display: inline-block;
+  list-style: none;
+  padding: 1.5rem 0;
+  margin: 0;
+  width: 100%;
+  border-bottom: .1rem solid $backgroundColor3;
+  border-top: .1rem solid $backgroundColor3;
+}
+.shouye li {
+  float: left;
+}
+.shouye li a {
+  color: #000;
+  padding: 2px;
+  margin-left: 1rem;
+  text-decoration: none;
+  /*去掉a标签的下划线*/
+}
+.shouye li a:hover {
+  background-color: $backgroundColor1;
+  color: #fff;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+}
+.people {
+  position: relative;
+  border-radius: 3px;
+  margin-top: 3rem;
+  background-color: #fff;
+  border: .1rem solid $borderColor;
+  box-shadow: 0 5px 10px $borderColor;
+  width: 32%;
+}
+.people-opacity:hover {
+  opacity: .7;
+  color: #fff;
+  background-color: #000;
+  /*background-color: rgba(43,52,36,0.4)*/
+  /*rgba渲染或者背景色加透明度都可以实现该功能*/
+}
+.people-opacity  {
+  position: absolute;
+  height: 100%;
+  font-size: 14px;
+  padding: 3rem;
+  letter-spacing: .1rem;
+  opacity: 0;
+  /*设置绝对定位和透明度为0使该div刚开始不显示*/
+}
+.people-opacity h5 {
+  padding-top: 5rem;
+  text-align: center;
+}
+.people-opacity span {
+  display: inline-block;
+  text-indent:2em;
+  /*首行缩进两个字符*/
+}
+.people-image {
+  float: left;
+  padding: 1.5rem 1rem;
+}
+.people-word {
+  margin-right: 1rem;
+  padding-top: 3rem;
+  span {
+    word-wrap: break-word;
+  }
+}
+.people1 {
+  overflow: hidden;
+  width: 100%;
+  border-top: .1rem solid $borderColor;
+}
+.people-doorsill {
+  float: left;
+  width: 50%;
+  padding: 1rem;
+}
+.people-hard {
+  float: left;
+  width: 50%;
+  padding: 1rem;
+  border-left: .1rem solid $borderColor;
+}
+.people1 img {
+  margin-top: -3px;
+  padding-left: .5rem;
+}
+.people1 span {
+  padding-left: .5rem;
+}
+.people p {
+  margin: 0;
+  padding: 1rem 0 1rem 1rem ;
+  border-bottom: .1rem solid $borderColor;
+}
+.money-time {
+  border-top: .1rem solid $borderColor;
+}
+.money {
+  float: left;
+  height: 88px;
+  width: 40%;
+  text-align: center;
+  border-bottom: .1rem solid $borderColor;
+  span {
+    line-height: 88px;
+  }
+}
+.time {
+  display: flex;
+  justify-content: space-around;
+  padding: .5rem 0;
+  border-bottom: .1rem solid $borderColor;
+  border-left: .1rem solid $borderColor;
+}
+.title {
+  margin-left: 10%;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  border-bottom: .1rem solid $borderColor;
+}
+@media screen and (max-width:992px) {
+  .content {
+    flex-wrap: wrap;
+    .people {
+      width: 48%;
+    }
+  }
+}
+@media screen and (max-width:767px) {
+  .content {
+    flex-wrap: wrap;
+    .people {
+      width: 100%;
+    }
+  }
+}

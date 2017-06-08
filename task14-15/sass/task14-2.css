@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*防止sass中注释报错*/
+body {
+  font-size: 62.5%;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0; }
+
+/*防止sass中注释报错*/
+header {
+  width: 100%; }
+
+.head1 {
+  position: relative;
+  width: 100%;
+  height: 3rem; }
+
+.tel {
+  position: absolute;
+  left: 10%;
+  color: #29b078;
+  line-height: 3rem; }
+
+.head-image {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  margin-top: -1rem;
+  list-style: none; }
+
+.head-image li {
+  float: left;
+  padding-left: 1rem; }
+
+.head-image1 {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.weixin {
+  background: url(../images/weixin.png);
+  background-size: 100%; }
+
+.qq {
+  background: url(../images/qq.png);
+  background-size: 100%; }
+
+.xinlang {
+  background: url(../images/xinlang.png);
+  background-size: 100%; }
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*加个换行属性的含义是，当点击书签按钮时，将ul在下面显示，避免和上面的div显示在一行，前提是ul的宽度设置为100%*/
+  align-items: center;
+  background-color: #29b078; }
+
+.jnshu-image {
+  margin-left: 10%;
+  padding: 1rem 0; }
+  .jnshu-image img {
+    width: 7rem; }
+
+.header-page {
+  display: none; }
+  .header-page .button {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 3px 8px;
+    background-color: #29b078;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer; }
+    .header-page .button span {
+      display: block;
+      background-color: #fff;
+      height: 2px;
+      z-index: 100;
+      width: 20px;
+      margin: 6px 2px; }
+
+.header-input {
+  display: none; }
+
+.header-ul {
+  list-style: none;
+  padding-right: 10%;
+  margin: 0; }
+  .header-ul li {
+    float: left; }
+    .header-ul li a {
+      font-size: 1.5rem;
+      color: #fff;
+      padding: 1.75rem;
+      text-decoration: none; }
+      .header-ul li a:hover {
+        border-bottom: 2px solid #fff; }
+
+@media screen and (max-width: 767px) {
+  .header-ul {
+    display: none;
+    border-top: 1px solid #32c086;
+    padding: 0;
+    width: 100%;
+    /*设置宽度是为了点击书签页，根据flex的换行属性使ul在下一行显示*/ }
+
+  .header-page {
+    display: block;
+    margin-right: 10%;
+    margin-top: 10px; }
+
+  .header-input:checked + .header-ul {
+    /*由于label和input关联，点击标签页的时候就相当于点击inpiut，当input被点击时，更改其兄弟元素ul的样式，使其显示出来*/
+    display: block; }
+    .header-input:checked + .header-ul li {
+      float: none;
+      padding-top: 1rem;
+      text-align: center; }
+      .header-input:checked + .header-ul li:hover {
+        border-bottom: 1px solid #fff; }
+      .header-input:checked + .header-ul li a:hover {
+        border-bottom: none; } }
+/*防止sass中注释报错*/
+footer {
+  width: 100%;
+  background-color: #29b078;
+  color: #fff; }
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%; }
+
+.foot h4 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  margin: 0; }
+
+.foot ul {
+  list-style: none;
+  padding: 0; }
+
+.foot li {
+  float: left; }
+
+.foot li a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none; }
+
+.foot li a:hover {
+  border-bottom: 1px solid #fff; }
+
+.net {
+  margin-top: 2rem;
+  background-color: #29b078;
+  padding: .5rem 0;
+  text-align: center;
+  border-top: 1px solid #32c086; }
+
+@media screen and (max-width: 374px) {
+  .foot div {
+    width: 100%; } }
+.main {
+  background-color: #fafafa;
+  width: 100%; }
+
+.qiye-image img {
+  width: 100%; }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%; }
+
+.shouye p {
+  margin: 0;
+  padding: 2rem 0;
+  font-size: 1.5rem; }
+  .shouye p span {
+    color: #29b078; }
+
+.hezuoqiye, .hezuoqiye1, .hezuoqiye2 {
+  background-color: #fff;
+  padding-top: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: .5rem; }
+
+.hezuoqiye1 {
+  width: 25%; }
+
+.hezuoqiye2 {
+  width: 70%; }
+
+.hezuoqiye1 h4 {
+  border-bottom: .1rem solid #e6e6e6;
+  margin: 0;
+  padding-bottom: 10px; }
+
+.hezuoqiye1 ul {
+  width: 140px;
+  margin: 0 auto;
+  /*设置固定宽度才能根据margin居中*/ }
+
+.hezuoqiye1 li {
+  list-style: circle;
+  /*空心圆*/
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  color: #f9a372;
+  /*为了改变圆圈的大小，可以先设置li的字体变大，在设置a的字体，单独改变字体大小，这样可以确保圆圈是变大的*/ }
+
+.hezuoqiye1 li a {
+  color: #29b078;
+  text-decoration: none;
+  font-size: 2rem; }
+
+.hezuoqiye1 li:hover {
+  list-style: disc;
+  /*鼠标滑过时变成实心圆*/ }
+
+.hezuoqiye1 li a:hover {
+  background-color: #fff;
+  color: #f9a372;
+  border: 0; }
+
+.qiyejianjie {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: .1rem solid #e6e6e6;
+  margin-top: -15px; }
+
+.tudou-image {
+  float: left; }
+
+.tudou-image img {
+  padding: 2rem 3rem; }
+
+.tudou {
+  padding: 2rem 4rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: #aeaeae; }
+
+.fazhan {
+  font-size: 1.5rem;
+  color: #aeaeae;
+  line-height: 2.5rem;
+  margin: 0;
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-indent: 2em;
+  /*首行缩进两个字符*/ }
+
+@media screen and (max-width: 992px) {
+  .content {
+    flex-wrap: wrap; }
+    .content .hezuoqiye1 {
+      width: 100%; }
+    .content .hezuoqiye2 {
+      width: 100%; } }
+
+/*# sourceMappingURL=task14-2.css.map */

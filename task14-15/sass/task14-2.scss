@@ -1,0 +1,119 @@
+@charset "utf-8";
+/*防止sass中注释报错*/
+$backgroundColor1: #29b078;
+$backgroundColor2: #fafafa;
+body {
+  font-size: 62.5%;
+  background-color: $backgroundColor2;
+  margin: 0;
+  padding: 0;
+}
+@import "header";
+@import "footer";
+.main {
+  background-color: $backgroundColor2;
+  width: 100%;
+}
+.qiye-image img {
+  width: 100%;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+.shouye p {
+  margin: 0;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  span {
+    color: $backgroundColor1;
+  }
+}
+.hezuoqiye {
+  background-color: #fff;
+  padding-top: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: .5rem;
+}
+.hezuoqiye1 {
+  @extend .hezuoqiye;
+  width: 25%;
+}
+.hezuoqiye2 {
+  @extend .hezuoqiye;
+  width: 70%;
+}
+.hezuoqiye1 h4 {
+  border-bottom: .1rem solid #e6e6e6;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.hezuoqiye1 ul {
+  width: 140px;
+  margin: 0 auto;
+  /*设置固定宽度才能根据margin居中*/
+}
+.hezuoqiye1 li {
+  list-style: circle;
+  /*空心圆*/
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  color: #f9a372;
+  /*为了改变圆圈的大小，可以先设置li的字体变大，在设置a的字体，单独改变字体大小，这样可以确保圆圈是变大的*/
+}
+.hezuoqiye1 li a {
+  color: $backgroundColor1;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.hezuoqiye1 li:hover {
+  list-style: disc;
+  /*鼠标滑过时变成实心圆*/
+}
+.hezuoqiye1 li a:hover {
+  background-color: #fff;
+  color: #f9a372;
+  border: 0;
+}
+.qiyejianjie {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: .1rem solid #e6e6e6;
+  margin-top: -15px;
+}
+.tudou-image {
+  float: left;
+}
+.tudou-image img {
+  padding: 2rem 3rem;
+}
+.tudou {
+  padding: 2rem 4rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: #aeaeae;
+}
+.fazhan {
+  font-size: 1.5rem;
+  color: #aeaeae;
+  line-height: 2.5rem;
+  margin: 0;
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-indent:2em;
+  /*首行缩进两个字符*/
+}
+@media screen and (max-width: 992px) {
+  .content {
+    flex-wrap: wrap;
+    .hezuoqiye1 {
+      width: 100%;
+    }
+    .hezuoqiye2 {
+      width: 100%;
+    }
+  }
+}

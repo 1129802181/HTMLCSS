@@ -1,0 +1,132 @@
+@charset "utf-8";
+/*防止sass中注释报错*/
+header {
+  width: 100%;
+}
+.head1 {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+}
+.tel {
+  position: absolute;
+  left: 10%;
+  color: $backgroundColor1;
+  line-height: 3rem;
+}
+.head-image {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  margin-top: -1rem;
+  list-style: none;
+}
+.head-image li {
+  float: left;
+  padding-left: 1rem;
+}
+.head-image1 {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.weixin {
+  background: url(../images/weixin.png);
+  background-size: 100%;
+}
+.qq {
+  background: url(../images/qq.png);
+  background-size: 100%;
+}
+.xinlang {
+  background: url(../images/xinlang.png);
+  background-size: 100%;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*加个换行属性的含义是，当点击书签按钮时，将ul在下面显示，避免和上面的div显示在一行，前提是ul的宽度设置为100%*/
+  align-items: center;
+  background-color: $backgroundColor1;
+}
+.jnshu-image {
+  margin-left: 10%;
+  padding: 1rem 0;
+  img {
+    width: 7rem;
+  }
+}
+.header-page {
+  display: none;
+  .button {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 3px 8px;
+    background-color: $backgroundColor1;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    span {
+      display: block;
+      background-color: #fff;
+      height: 2px;
+      z-index: 100;
+      width: 20px;
+      margin: 6px 2px;
+    }
+  }
+}
+.header-input{
+  display: none;
+}
+.header-ul {
+  list-style: none;
+  padding-right: 10%;
+  margin: 0;
+  li {
+    float: left;
+    a {
+      font-size: 1.5rem;
+      color: #fff;
+      padding: 1.75rem;
+      text-decoration: none;
+      &:hover {
+        border-bottom: 2px solid #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-ul {
+    display: none;
+    border-top: 1px solid #32c086;
+    padding: 0;
+    width: 100%;
+    /*设置宽度是为了点击书签页，根据flex的换行属性使ul在下一行显示*/
+  }
+  .header-page {
+    display: block;
+    margin-right: 10%;
+    margin-top: 10px;
+  }
+  .header-input:checked + .header-ul {
+    /*由于label和input关联，点击标签页的时候就相当于点击inpiut，当input被点击时，更改其兄弟元素ul的样式，使其显示出来*/
+    display: block;
+    li{
+      float: none;
+      padding-top: 1rem;
+      text-align: center;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+      a:hover {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+

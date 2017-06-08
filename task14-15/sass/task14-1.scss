@@ -1,0 +1,202 @@
+@charset "utf-8";
+/*防止sass中注释报错*/
+$backgroundColor1: #29b078;
+$backgroundColor2: #fafafa;
+body {
+  font-size: 62.5%;
+  background-color: $backgroundColor2;
+  margin: 0;
+  padding: 0;
+}
+@import "header";
+@import "footer";
+.main {
+  background-color: $backgroundColor2;
+  width: 100%;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+.row-image {
+  padding-top: 60px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  width: 25%;
+}
+.row-image,
+.row-people {
+  p {
+    padding-top: 5px;
+    color: #999999;
+    font-size: 16px;
+  }
+}
+.row-people {
+  padding: 120px 1rem 0 1rem;
+  text-align: center;
+  border-left: .1rem dashed #dedede;
+}
+.how-study {
+  text-align: center;
+  font-size: 2rem;
+  margin: 5rem 0 3rem;
+}
+.how-study1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+  width: 25%;
+}
+.how-study1 p {
+  margin: 0;
+  color: #999999;
+  letter-spacing: .1rem;
+  text-align: center;
+}
+.radius {
+  background-color: #fff;
+  border-radius: 50%;
+  color: $backgroundColor1;
+  font-size: 1.5rem;
+  box-shadow: 0 3px 6px #eae9ea;
+}
+.radius1 {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+}
+.radius2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/*使用flex布局,但是圆圈实现的时候，由于布局中空间不够会导致圆圈变形，因此多加了两个div来撑开圆圈*/
+.student {
+  text-align: center;
+  margin: 0 1rem;
+  background-color: #fff;
+  width: 22%;
+  border: 1px solid #f0f0f0;
+}
+.student span {
+  display: inline-block;
+  color: #999999;
+  width: 150px;
+  padding: 1rem 0;
+}
+.click-circle{
+  text-align: center;
+  padding: .5rem 0;
+}
+.circle{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  border:0 solid #26a26f;
+  margin-left: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+.circle:hover{
+  background-color: #26a26f;
+}
+.content1 {
+  padding: 0 1rem;
+}
+.cooperator1 {
+  width: 20%;
+  background-color: #fff;
+}
+.cooperator1:hover {
+  box-shadow: 0 5px 10px #eae9ea;
+}
+.cooperator1 img {
+  width: 100%;
+}
+.lianjie {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 5rem;
+  .how-study {
+    margin: 0;
+    padding: 2rem 0;
+  }
+}
+.content2 {
+  display: flex;
+  flex-wrap: wrap;
+  .lianjie1 {
+    width: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    /*space-between：两端对齐，项目之间的间隔都相等*/
+  }
+}
+.lianjie1 li {
+  color: #999999;
+  a {
+    color: #999999;
+  }
+}
+@media screen and (max-width: 374px) {
+  .content2 {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .how-study1 {
+      width: 50%;
+    }
+    .row-image {
+      width: 50%;
+    }
+    .row-people{
+      width: 50%;
+    }
+    .student {
+      width: 45%;
+    }
+    .cooperator1 {
+      width: 33%;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .how-study1 {
+      width: 100%;
+    }
+    .row-image {
+      width: 100%;
+    }
+    .row-people{
+      width: 100%;
+    }
+    .student {
+      width: 100%;
+    }
+    .cooperator1 {
+      width: 100%;
+    }
+    .lianjie1 {
+      width: 100%;
+    }
+  }
+}

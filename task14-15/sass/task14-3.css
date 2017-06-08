@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/*防止sass中注释报错*/
+body {
+  font-size: 62.5%;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  line-height: normal; }
+
+/*防止sass中注释报错*/
+header {
+  width: 100%; }
+
+.head1 {
+  position: relative;
+  width: 100%;
+  height: 3rem; }
+
+.tel {
+  position: absolute;
+  left: 10%;
+  color: #29b078;
+  line-height: 3rem; }
+
+.head-image {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  margin-top: -1rem;
+  list-style: none; }
+
+.head-image li {
+  float: left;
+  padding-left: 1rem; }
+
+.head-image1 {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.weixin {
+  background: url(../images/weixin.png);
+  background-size: 100%; }
+
+.qq {
+  background: url(../images/qq.png);
+  background-size: 100%; }
+
+.xinlang {
+  background: url(../images/xinlang.png);
+  background-size: 100%; }
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*加个换行属性的含义是，当点击书签按钮时，将ul在下面显示，避免和上面的div显示在一行，前提是ul的宽度设置为100%*/
+  align-items: center;
+  background-color: #29b078; }
+
+.jnshu-image {
+  margin-left: 10%;
+  padding: 1rem 0; }
+  .jnshu-image img {
+    width: 7rem; }
+
+.header-page {
+  display: none; }
+  .header-page .button {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 3px 8px;
+    background-color: #29b078;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer; }
+    .header-page .button span {
+      display: block;
+      background-color: #fff;
+      height: 2px;
+      z-index: 100;
+      width: 20px;
+      margin: 6px 2px; }
+
+.header-input {
+  display: none; }
+
+.header-ul {
+  list-style: none;
+  padding-right: 10%;
+  margin: 0; }
+  .header-ul li {
+    float: left; }
+    .header-ul li a {
+      font-size: 1.5rem;
+      color: #fff;
+      padding: 1.75rem;
+      text-decoration: none; }
+      .header-ul li a:hover {
+        border-bottom: 2px solid #fff; }
+
+@media screen and (max-width: 767px) {
+  .header-ul {
+    display: none;
+    border-top: 1px solid #32c086;
+    padding: 0;
+    width: 100%;
+    /*设置宽度是为了点击书签页，根据flex的换行属性使ul在下一行显示*/ }
+
+  .header-page {
+    display: block;
+    margin-right: 10%;
+    margin-top: 10px; }
+
+  .header-input:checked + .header-ul {
+    /*由于label和input关联，点击标签页的时候就相当于点击inpiut，当input被点击时，更改其兄弟元素ul的样式，使其显示出来*/
+    display: block; }
+    .header-input:checked + .header-ul li {
+      float: none;
+      padding-top: 1rem;
+      text-align: center; }
+      .header-input:checked + .header-ul li:hover {
+        border-bottom: 1px solid #fff; }
+      .header-input:checked + .header-ul li a:hover {
+        border-bottom: none; } }
+/*防止sass中注释报错*/
+footer {
+  width: 100%;
+  background-color: #29b078;
+  color: #fff; }
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%; }
+
+.foot h4 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  margin: 0; }
+
+.foot ul {
+  list-style: none;
+  padding: 0; }
+
+.foot li {
+  float: left; }
+
+.foot li a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none; }
+
+.foot li a:hover {
+  border-bottom: 1px solid #fff; }
+
+.net {
+  margin-top: 2rem;
+  background-color: #29b078;
+  padding: .5rem 0;
+  text-align: center;
+  border-top: 1px solid #32c086; }
+
+@media screen and (max-width: 374px) {
+  .foot div {
+    width: 100%; } }
+.main {
+  background-color: #fafafa;
+  width: 100%; }
+
+.shouye {
+  width: 80%;
+  margin-left: 10%; }
+
+.shouye p {
+  margin: 0;
+  padding: 2rem 0;
+  font-size: 1.5rem; }
+
+.shouye p:nth-of-type(2) {
+  border-bottom: 0.1rem solid #d0d6d9; }
+
+.shouye ul {
+  display: inline-block;
+  list-style: none;
+  padding: 1.5rem 0;
+  margin: 0;
+  width: 100%;
+  border-bottom: 0.1rem solid #d0d6d9;
+  border-top: 0.1rem solid #d0d6d9; }
+
+.shouye li {
+  float: left; }
+
+.shouye li a {
+  color: #000;
+  padding: 2px;
+  margin-left: 1rem;
+  text-decoration: none;
+  /*去掉a标签的下划线*/ }
+
+.shouye li a:hover {
+  background-color: #29b078;
+  color: #fff; }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%; }
+
+.people {
+  position: relative;
+  border-radius: 3px;
+  margin-top: 3rem;
+  background-color: #fff;
+  border: 0.1rem solid #eae9ea;
+  box-shadow: 0 5px 10px #eae9ea;
+  width: 32%; }
+
+.people-opacity:hover {
+  opacity: .7;
+  color: #fff;
+  background-color: #000;
+  /*background-color: rgba(43,52,36,0.4)*/
+  /*rgba渲染或者背景色加透明度都可以实现该功能*/ }
+
+.people-opacity {
+  position: absolute;
+  height: 100%;
+  font-size: 14px;
+  padding: 3rem;
+  letter-spacing: .1rem;
+  opacity: 0;
+  /*设置绝对定位和透明度为0使该div刚开始不显示*/ }
+
+.people-opacity h5 {
+  padding-top: 5rem;
+  text-align: center; }
+
+.people-opacity span {
+  display: inline-block;
+  text-indent: 2em;
+  /*首行缩进两个字符*/ }
+
+.people-image {
+  float: left;
+  padding: 1.5rem 1rem; }
+
+.people-word {
+  margin-right: 1rem;
+  padding-top: 3rem; }
+  .people-word span {
+    word-wrap: break-word; }
+
+.people1 {
+  overflow: hidden;
+  width: 100%;
+  border-top: 0.1rem solid #eae9ea; }
+
+.people-doorsill {
+  float: left;
+  width: 50%;
+  padding: 1rem; }
+
+.people-hard {
+  float: left;
+  width: 50%;
+  padding: 1rem;
+  border-left: 0.1rem solid #eae9ea; }
+
+.people1 img {
+  margin-top: -3px;
+  padding-left: .5rem; }
+
+.people1 span {
+  padding-left: .5rem; }
+
+.people p {
+  margin: 0;
+  padding: 1rem 0 1rem 1rem;
+  border-bottom: 0.1rem solid #eae9ea; }
+
+.money-time {
+  border-top: 0.1rem solid #eae9ea; }
+
+.money {
+  float: left;
+  height: 88px;
+  width: 40%;
+  text-align: center;
+  border-bottom: 0.1rem solid #eae9ea; }
+  .money span {
+    line-height: 88px; }
+
+.time {
+  display: flex;
+  justify-content: space-around;
+  padding: .5rem 0;
+  border-bottom: 0.1rem solid #eae9ea;
+  border-left: 0.1rem solid #eae9ea; }
+
+.title {
+  margin-left: 10%;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  border-bottom: 0.1rem solid #eae9ea; }
+
+@media screen and (max-width: 992px) {
+  .content {
+    flex-wrap: wrap; }
+    .content .people {
+      width: 48%; } }
+@media screen and (max-width: 767px) {
+  .content {
+    flex-wrap: wrap; }
+    .content .people {
+      width: 100%; } }
+
+/*# sourceMappingURL=task14-3.css.map */
